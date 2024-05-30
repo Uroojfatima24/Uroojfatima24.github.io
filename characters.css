@@ -1,60 +1,59 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: white;
+    height: 100%; /* Ensures the body and html elements take up the full height of the viewport. */
+    margin: 0; /* Removes default margins. */
+    background-color: rgb(0, 0, 0); /* Sets the background color to black. */
+    color:  rgb(3, 3, 36); /* Sets the text color to a very dark blue by using low intensities 
+    of red and green and a slightly higher intensity of blue.*/
 }
 
 header {
-    background-color: black;
-    font-family: "Rubik Mono One", monospace;
-    color: #6d088b;
-    padding: 10px 10px;
+    background-color: black; /* Sets the header background to black. */
+    font-family: "Rubik Mono One", monospace; /*  Sets the font for the header. */
+    padding: 10px; /* Adds padding inside the header. */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style-type: none; /* Removes bullet points from the list. */
+    margin: 0; /* Removes default margins and padding. */
     padding: 0;
-    text-align: right;
+    text-align: right; /* Aligns the list to the right. */
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 20px;
+    display: inline-block; /* Displays list items inline. */
+    margin-left: 20px; /* Adds left margin to list items. */
 }
 
 nav ul li a {
-    color: #515c5e;
+    color: #515c5e; /* Styles the links, sets color, removes underline, and adds a transition for the color. */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #6d088b;
+    color: #6d088b; /* Changes link color on hover. */
 }
 
 .content {
-    padding: 50px;
-    text-align: center;
+    padding: 50px; /* Adds padding inside the content area. */
+    text-align: center; /* Centers the text inside the content. */
 }
 
 .h1 {
     font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
-    color: #515c5e;
+    font-weight: 400; /* Sets the font weight. */
+    font-style: normal; /* Ensures the font style is normal. */
+    color: #515c5e; /* Sets the heading color. */
 }
 
 .characters-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: flex; /* Uses flexbox layout. */
+    flex-wrap: wrap; /* Allows items to wrap to the next line. */
+    justify-content: center; /* Centers the items. */
+    gap: 30px; /* Sets a gap between items. */
 }
 
-.character-card {
+.character-card { /* Styles the card container, sets background color, border-radius, padding, width, text alignment, and transition effects.*/
     background-color: #515c5e;
     border-radius: 10px;
     padding: 20px;
@@ -63,12 +62,12 @@ nav ul li a:hover {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.character-card img {
+.character-card img { /* Styles the image, ensures it takes full width, and rounds the corners. */
     width: 100%;
     border-radius: 10px;
 }
 
-.character-card h2 {
+.character-card h2 { /* Styles the heading inside the card, sets margin, color, font family, weight, and style. */
     margin: 10px 0 5px;
     color:rgb(3, 3, 36);
         font-family: "Salsa", cursive;
@@ -76,32 +75,30 @@ nav ul li a:hover {
         font-style: normal;
 }
 
-.character-card p {
+.character-card p { /* Styles the paragraph inside the card. */
     font-size: 14px;
 }
 
-.character-card:hover {
+.character-card:hover { /* Adds hover effects, moves the card up and adds a shadow. */
     transform: translateY(-20px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 15px rgb(48, 144, 170);
 }
 
 footer {
-    background-color: black;
-    color: blue;
-    text-align: center;
-    padding: 20px;
+    background-color: black; /* Sets the footer background to black. */
+    color: blue; /* Sets the text color to blue. */
+    text-align: center; /* Centers the text inside the footer. */
+    padding: 20px; /* Adds padding inside the footer. */
 }
 
 .p3{
-    font-family: "Architects Daughter", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: blue;
+    font-family: "Architects Daughter", cursive; /* Sets the font family for the paragraph. */
+    color: blue; /* Sets the text color to blue. */
 }   
 
 /* Modal styles */
-.modal {
-    display: none; /*  mm */
+.modal { /* Styles for the modal container, initially hidden, fixed position, full width and height. */
+    display: none; 
     position: fixed; 
     z-index: 1; 
     padding-top: 60px; 
@@ -110,11 +107,9 @@ footer {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
 }
 
-.modal-content {
+.modal-content { /* Styles the content inside the modal, centered with padding, border, and rounded corners. */
     background-color: #333;
     margin: 5% auto;
     padding: 20px;
@@ -123,19 +118,5 @@ footer {
     max-width: 600px;
     border-radius: 10px;
     text-align: center;
-    color: white;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}

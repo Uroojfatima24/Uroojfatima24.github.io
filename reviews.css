@@ -47,6 +47,7 @@ nav ul li a:hover {
     color:#f5c518
 }
 
+/* Arranges review cards in a column with centered alignment and spacing between. */
 .reviews-container {
     display: flex;
     flex-direction: column;
@@ -55,6 +56,7 @@ nav ul li a:hover {
     margin-bottom: 50px;
 }
 
+/* Styles individual review cards with a dark background, padding, border-radius, and text alignment. */
 .review-card {
     background-color: #333;
     padding: 20px;
@@ -68,11 +70,13 @@ nav ul li a:hover {
     margin: 0 0 10px;
 }
 
-.star-rating {
+/* Styles star ratings with gold color and bottom margin. */
+.star-rating { 
     color: #f5c518;
     margin-bottom: 10px;
 }
 
+/* Styles the review submission form with dark background, padding, border-radius, and width. */
 .review-form-container {
     background-color: #333;
     padding: 20px;
@@ -103,7 +107,7 @@ nav ul li a:hover {
 
 .review-form-container button {
     padding: 10px 20px;
-    background-color: blue;
+    background-color: #f5c518;
     color: white;
     border: none;
     border-radius: 5px;

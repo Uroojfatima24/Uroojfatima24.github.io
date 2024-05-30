@@ -3,39 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Links to an external stylesheet for Font Awesome icons. -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!--Links to an external stylesheet for the custom styles of the webpage.-->
 <link rel="stylesheet" href="characters.css">
+<!-- Preconnects to Google Fonts, improving loading performance. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Preconnects to the domain serving the font files with cross-origin attributes. -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Links to a specific Google Font (Rubik Mono One) for use in the document. -->
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<!-- Sets the title of the webpage, displayed in the browser tab. -->
 <title>Characters</title>
 </head>
-<body>
+<body> <!-- Contains the content of the HTML document. -->
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Characters.html">Characters</a></li>
-            <li><a href="episodes.html">Episodes</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="soundtracks.html">Soundtracks</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
+<header> <!-- Defines the header section -->
+    <nav> <!-- Defines the navigation section. -->
+        <ul> <!-- Unordered list element -->
+            <li><a href="index.html">Home</a></li> <!-- List item containing a hyperlink to the "Home" page. -->
+            <li><a href="Characters.html">Characters</a></li> <!-- List item containing a hyperlink to the "Characters" page. -->
+            <li><a href="episodes.html">Episodes</a></li> <!-- List item containing a hyperlink to the "Episodes" page. -->
+            <li><a href="locations.html">Locations</a></li> <!-- List item containing a hyperlink to the "Locations" page. -->
+            <li><a href="soundtracks.html">Soundtracks</a></li> <!-- List item containing a hyperlink to the "Soundtracks" page. -->
+            <li><a href="reviews.html">Reviews</a></li> <!-- List item containing a hyperlink to the "Reviews" page. -->
         </ul>
     </nav>
 </header>
 
-<div class="content">
-    <h1 class="h1">Characters</h1>
+<div class="content"> <!-- Main content container. -->
+    <h1 class="h1">Characters</h1> <!-- Main heading for the characters section. -->
 
-    <div class="characters-container">
-        <div class="character-card">
-            <h2>Bigby Wolf</h2>
-            <img src="bigby.jpg" alt="bigby">
+    <div class="characters-container"> <!-- Container for character cards. -->
+        <div class="character-card"> <!-- Container for an individual character card. -->
+            <h2>Bigby Wolf</h2> <!-- Character name as a heading. -->
+            <img src="bigby.jpg" alt="bigby"> <!-- Character image with a source file and alternative text. -->
+            <!-- Paragraph describing the character. -->
             <p>Bigby Wolf, the protagonist of The Wolf Among Us, is the sheriff of Fabletown, responsible for protecting its inhabitants. 
                 His character, based on the Big Bad Wolf from various fairy tales, is shaped by the player's choices and actions.</p>
         </div>
 
+<!-- same explanation as above. -->
         <div class="character-card">
             <h2>Snow White</h2>
             <img src="snowwhite.webp" alt="snow white">
@@ -88,18 +96,20 @@
     </div>
 </div>
 
-<div id="character-modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="modal-character-name"></h2>
-        <img id="modal-character-image" src="" alt="">
-        <p id="modal-character-description"></p>
+<div id="character-modal" class="modal"> <!-- Container for a modal popup. -->
+    <div class="modal-content"> <!-- Container for modal content. -->
+        <span class="close">&times;</span> <!-- Element to close the modal ('X' button). -->
+        <h2 id="modal-character-name"></h2> <!-- Placeholder for character name in the modal. -->
+        <img id="modal-character-image" src="" alt=""> <!-- Placeholder for character image in the modal. -->
+        <p id="modal-character-description"></p> <!-- Placeholder for character description in the modal. -->
     </div>
 </div>
 
-<footer>
-    <p class="p3">telltale</p>
-    <p>&copy; 2023 LCG Entertainment, Inc. All Rights Reserved.</p>
+<footer> <!-- Defines the footer section. -->
+    <p class="p3">telltale</p> <!-- Paragraph element for footer content. -->
+    <!-- Paragraph element with copyright information. -->
+    <p>&copy; 2023 LCG Entertainment, Inc. All Rights Reserved.</p> 
+    <!-- Paragraph with hyperlinks to Privacy Policy and Terms of Service. -->
     <p><a href="https://www.telltale.com/privacy-policy/">Privacy Policy</a> | <a href="https://www.telltale.com/tos/">Terms of Service</a></p>
 </footer>
 

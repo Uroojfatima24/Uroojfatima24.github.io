@@ -1,9 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Arranges child elements in a column layout using flexbox. */
     background-color: #000000;
     color: #ffffff;
 }
@@ -34,7 +33,7 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-    color: rgb(8, 68, 16); /* Set text color for the links */
+    color: rgb(10, 40, 123); /* Set text color for the links */
     text-decoration: none; /* Remove underline from the links */
     transition: color 0.3s;
 }
@@ -43,42 +42,44 @@ nav ul li a:hover {
     color: #6d088b; /* Change text color on hover */
 }
 
-.container {
+.container { /* Centers child elements horizontally and vertically. */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Makes the container take up the full viewport height. */
 }
 
 .location {
-    position: relative;
-    margin: 20px;
+    position: relative; /* Positions the elements relative to their normal position. */
+    margin: 20px; /* Adds margin around the location elements. */
 }
 
 .location img {
-    width: 800px;
+    width: 800px; /* Sets the dimensions of the images. */
     height: 500px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* Adds a smooth transition effect when scaling the images. */
 }
 
 .location img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Styles applied to images on hover. */
 }
 
 .bubble-container {
-    position: absolute;
+    position: absolute; /* Positions the containers relative to their closest positioned ancestor. */
+    /* Positions the containers relative to their containing block. */
     top: 90%;
     right: -150px;
+    /* Sets the width and padding of the containers. */
     width: 150px;
     padding: 5x;
-    border-radius: 15px;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.3s, right 0.3s;
+    border-radius: 15px; /* Rounds the corners of the containers. */
+    transform: translateY(-50%); /* Moves the containers vertically. */
+    opacity: 0; /* Makes the containers invisible. */
+    transition: opacity 0.3s, right 0.3s; /* Adds smooth transitions for opacity and right position. */
 }
 
-.bubble-container.show {
+.bubble-container.show { /* Makes the containers visible and positions them to the right. */
     opacity: 1;
     right: 50px;
 }

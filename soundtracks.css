@@ -1,0 +1,84 @@
+header{
+    background-color: black;
+    font-family: "Rubik Mono One", monospace;
+    color: #f55dcf;
+    padding: 10px 10px;
+}
+
+nav {
+    text-align: right; /* Align the navigation bar to the right */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-left: 20px; /* Add space between each list item */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first list item */
+}
+
+nav ul li a {
+    color: #f55dcf; /* Set text color for the links */
+    text-decoration: none; /* Remove underline from the links */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6d088b; /* Change text color on hover */
+}
+
+.h1 {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color:blue;
+  }
+  
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding-top: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 80px;
+    padding-top: 10px;
+}
+
+.grid-item {
+    background-color: #7f4368;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #fff;
+}
+
+audio {
+    width: 90%;
+}
+
+footer {
+    height: 90px;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: blue;
+}
+  

@@ -25,19 +25,26 @@
 </header>
 
 <header>
-    <h1 style="text-align: center; color: rgb(8, 68, 16);">Locations</h1>
+    <h1 style="text-align: center; color: rgb(10, 40, 123);">Locations</h1>
 </header>
 
-<div class="container">
+<div class="container"> <!-- Starts a container for a location. -->
+<!-- Defines a clickable location div with an ID and an onclick event. -->
     <div class="location" id="location1" onclick="toggleBubble('bubble1')">
+<!-- Adds an image for the first location. -->
         <img src="loc1.webp" alt="Location 1">
+<!-- Starts a div for a bubble container with a specific background color. -->
         <div id="bubble1" class="bubble-container" style="background-color: #203255;" >
+<!-- Starts a bubble div inside the container. -->
             <div class="bubble">
+<!-- Adds a paragraph with the location's name. -->
                 <p>The Woodland Luxury Apartments</p>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Repeats similar blocks for additional locations (locations 2 to 5) with different images, IDs, and bubble contents. -->
 
 <div class="container">
     <div class="location" id="location2" onclick="toggleBubble('bubble2')">

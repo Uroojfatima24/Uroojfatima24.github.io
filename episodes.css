@@ -1,9 +1,9 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "LXGW WenKai Mono TC", monospace;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Arranges children elements in a column. */
     background-color: #000000;
     color: #ffffff;
 }
@@ -36,7 +36,7 @@ margin-left: 0; /* Remove margin from the first list item */
 nav ul li a {
 color: rgb(255, 255, 255); /* Set text color for the links */
 text-decoration: none; /* Remove underline from the links */
-transition: color 0.3s;
+transition: color 0.3s; /* Adds a transition effect for color changes. */
 }
 
 nav ul li a:hover {
@@ -45,40 +45,46 @@ color: #6d088b; /* Change text color on hover */
 
 .content {
     display: flex;
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Makes the content area expand to fill available space. */
+    padding: 20px; /* Adds padding inside the content area. */
 }
 
 .tabs {
-    width: 10%;
-    border-right: 1px solid;
-    padding-right: 0px;
-    background-color: #2f003d;
+    width: 10%; /* Sets the width of the tabs to 10% of the container. */
+    border-right: 1px solid; /* Adds a solid border on the right side. */
+    padding-right: 0px; /* Removes padding on the right side. */
+    background-color: #2f003d; /* Sets the background color to dark purple. */
 }
 
 .tabs button {
-    background-color: #333;
-    color: #ffffff;
-    padding: 10px;
-    width: 100%;
-    border: none;
+    background-color: #333; /* Sets the button background color to dark gray. */
+    color: #ffffff; /* Sets button text color to white. */
+    padding: 10px; /* Adds padding inside the button. */
+    width: 100%; /* Makes the button width 100% of its container. */
+    border: none; /* Removes the border from the button. */
     text-align: left;
-    cursor: pointer;
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button. */
 }
 
 .tab-content {
-    flex: 1;
-    padding-left: 20px;
+    flex: 1; /* Allows the tab content to expand and fill the available space. */
+    padding-left: 20px; /* Adds padding to the left side of the tab content. */
 }
 
 img{
-    max-width: 100%; /* Responsive image */
-    height: auto;
-    margin: 0 auto;
+    max-width: 100%; /*  Makes the image responsive by setting its maximum width to 100% of its container. */
+    height: auto; /* Maintains the aspect ratio of the image. */
+    margin: 0 auto; /* Centers the image horizontally. */
 }
 
 footer {
-    background-color: #333;
-    text-align: center;
-    padding: 10px;
+    background-color: black; /* Sets the footer background to black. */
+    color: blue; /* Sets the text color to blue. */
+    text-align: center; /* Centers the text inside the footer. */
+    padding: 20px; /* Adds padding inside the footer. */
 }
+
+.p3{
+    font-family: "Architects Daughter", cursive; /* Sets the font family for the paragraph. */
+    color: blue; /* Sets the text color to blue. */
+} 

@@ -28,10 +28,10 @@
 <div class="content">
     <h1 class="h1">User Reviews</h1>
 
-    <div class="reviews-container">
-        <div class="review-card">
+    <div class="reviews-container"> <!-- Contains individual review cards. -->
+        <div class="review-card"> <!--  Represents a single review with the user's name, star rating, and review text. -->
             <h2>Pelit (Finland)</h2>
-            <div class="star-rating">
+            <div class="star-rating"> <!-- Displays star ratings using Font Awesome icons. -->
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -66,15 +66,16 @@
         
     </div>
 
-    <div class="review-form-container">
+    <div class="review-form-container"> <!-- Contains a form for submitting new reviews. -->
         <h2>Submit Your Review</h2>
-        <form id="review-form">
+        <form id="review-form"> <!-- Defines a form with input fields for name, rating, and review. -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="rating">Rating:</label>
             <div class="star-rating-input">
-                <i class="far fa-star" data-rating="1"></i>
+                <i class="far fa-star" data-rating="1"></i> <!-- This HTML code creates an empty star icon using Font Awesome with a data 
+                    attribute set to "1" for rating purposes. -->
                 <i class="far fa-star" data-rating="2"></i>
                 <i class="far fa-star" data-rating="3"></i>
                 <i class="far fa-star" data-rating="4"></i>

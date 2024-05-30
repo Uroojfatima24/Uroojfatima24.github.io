@@ -49,7 +49,7 @@ body, html {
     padding-top: 0px;
 }
 
-.grid-container {
+.grid-container { /* Styles a grid layout container with three columns, grid gap, and padding. */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -57,7 +57,7 @@ body, html {
     padding-top: 10px;
 }
 
-.grid-item {
+.grid-item { /* Styles each grid item with a purple background, padding, centered text, and rounded corners. */
     background-color: #7f4368;
     padding: 10px;
     text-align: center;
@@ -69,10 +69,10 @@ h2 {
 }
 
 audio {
-    width: 90%;
+    width: 90%; /*  Styles audio elements to be 90% of their container's width. */
 }
 
-footer {
+footer { /* Styles the footer section with a black background, blue text color, and centered content. */
     height: 90px;
     background-color: black;
     flex-direction: column;
@@ -82,7 +82,7 @@ footer {
     color: blue;
 }
   
-.p3{
+.p3{ /*  Styles paragraphs with the Architects Daughter font, normal weight, and blue color. */
     font-family: "Architects Daughter", cursive;
     font-weight: 400;
     font-style: normal;

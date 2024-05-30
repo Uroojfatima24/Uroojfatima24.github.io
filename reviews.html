@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="reviews.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<title>Reviews</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Characters.html">Characters</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="soundtracks.html">Soundtracks</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <h1 class="h1">User Reviews</h1>
+
+    <div class="reviews-container">
+        <div class="review-card">
+            <h2>Pelit (Finland)</h2>
+            <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>The game is even better than the Bill Willingham's original graphic novel series. The Wolf Among Us is a showcase of first 
+            class storytelling. [Aug 2014]</p>
+        </div>
+
+        <div class="review-card">
+            <h2>Zeldren</h2>
+            <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Univers catchy avec une histoire sombre reprenant l'histoire de plusieurs fables traditionnelles. Une véritable tension 
+                s'installe dans tout le jeu avec une ambiance malsaine et dérangeante sur une affaire de meurtre et de prostitution. 
+                Fin incroyable.</p>
+        </div>
+
+        <div class="review-card">
+            <h2>Piruz</h2>
+            <div class="star-rating">
+                <i class="fas fa-star"></i>
+            </div>
+            <p>It is probably the most stupid game i have ever played in my entire life, omg</p>
+        </div>
+        
+    </div>
+
+    <div class="review-form-container">
+        <h2>Submit Your Review</h2>
+        <form id="review-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="rating">Rating:</label>
+            <div class="star-rating-input">
+                <i class="far fa-star" data-rating="1"></i>
+                <i class="far fa-star" data-rating="2"></i>
+                <i class="far fa-star" data-rating="3"></i>
+                <i class="far fa-star" data-rating="4"></i>
+                <i class="far fa-star" data-rating="5"></i>
+            </div>
+            <input type="hidden" id="rating" name="rating" required>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 LCG Entertainment, Inc. All Rights Reserved.</p>
+    <p><a href="https://www.telltale.com/privacy-policy/">Privacy Policy</a> | <a href="https://www.telltale.com/tos/">Terms of Service</a></p>
+</footer>
+
+<script src="reviews.js"></script>
+</body>
+</html>

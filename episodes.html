@@ -24,8 +24,9 @@
     </nav>
 </header>
 
-<div class="content">
-    <div class="tabs">
+<div class="content"> <!-- A div element that wraps the main content. -->
+    <div class="tabs"> <!-- A div for tab buttons. -->
+<!-- Buttons to switch between different episode tabs, calling the openTab function and setting background color. -->
         <button class="tablink" onclick="openTab(event, 'Episode1')" id="defaultOpen" style="background-color: #2f003d">Episode 1</button>
         <button class="tablink" onclick="openTab(event, 'Episode2')" style="background-color:#2f003d">Episode 2</button>
         <button class="tablink" onclick="openTab(event, 'Episode3')" style="background-color: #2f003d">Episode 3</button>
@@ -33,13 +34,15 @@
         <button class="tablink" onclick="openTab(event, 'Episode5')" style="background-color: #2f003d">Episode 5</button>
     </div>
 
+<!-- Div elements for each episode content, initially hidden except for the first tab. -->
     <div class="tab-content" id="Episode1">
-        <h2>Episode 1: Faith</h2>
-        <img src="Ep1.webp" alt="Episode 1 Thumbnail">
+        <h2>Episode 1: Faith</h2> <!-- Header for the episode title. -->
+        <img src="Ep1.webp" alt="Episode 1 Thumbnail"> <!-- Image representing the episode thumbnail. -->
+<!--Paragraph describing the episode. -->
         <p>A gripping introduction to the world of Fabletown, where Bigby Wolf investigates a murder.</p>
     </div>
 
-    <div class="tab-content" id="Episode2" style="display:none">
+    <div class="tab-content" id="Episode2" style="display:none"> 
         <h2>Episode 2: Smoke and Mirrors</h2>
         <img src="Ep2.webp" alt="Episode 2 Thumbnail">
         <p>Bigby delves deeper into the seedy underbelly of Fabletown as tensions rise.</p>
@@ -64,6 +67,15 @@
     </div>
 </div>
 
+<footer> <!-- Defines the footer section. -->
+    <p class="p3">telltale</p> <!-- Paragraph element for footer content. -->
+    <!-- Paragraph element with copyright information. -->
+    <p>&copy; 2023 LCG Entertainment, Inc. All Rights Reserved.</p> 
+    <!-- Paragraph with hyperlinks to Privacy Policy and Terms of Service. -->
+    <p><a href="https://www.telltale.com/privacy-policy/">Privacy Policy</a> | <a href="https://www.telltale.com/tos/">Terms of Service</a></p>
+</footer>
+
+<!-- Links to an external JavaScript file named episodes.js. -->
 <script src="episodes.js"></script>
 
 </body>

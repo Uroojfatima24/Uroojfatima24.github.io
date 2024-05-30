@@ -1,7 +1,6 @@
-header{
+header{ /* Styles the header with a black background, specific font, and padding. */
     background-color: black;
     font-family: "Rubik Mono One", monospace;
-    color: #6d088b;
     padding: 10px 10px;
 }
 
@@ -27,14 +26,14 @@ nav ul li:first-child {
 nav ul li a {
     color:blue; /* Set text color for the links */
     text-decoration: none; /* Remove underline from the links */
-    transition: color 0.3s;
+    transition: color 0.3s; /*  adds a color transition effect. */
 }
 
 nav ul li a:hover {
     color: #6d088b; /* Change text color on hover */
 }
 
-.h1 {
+.h1 { /* Styles the h1 elements with a specific font, weight, style, and blue color. */
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;
@@ -48,7 +47,7 @@ body, html {
     background-color: black;
 }
 
-.parallax {
+.parallax { /*  Styles the parallax background image with specific properties for scrolling, positioning, and size. */
     background-image: url('https://www.cafemaisgeek.com/wp-content/uploads/2023/03/EGS_TheWolfAmongUs2_Telltale_S1_2560x1440-3eeac4706b97a35dca928f809071c2e3-2048x1152.jpeg');
     height: 100%;
     background-attachment: scroll;
@@ -57,7 +56,7 @@ body, html {
     background-size: cover;
 }
 
-.content {
+.content { /* Sets the content section to have a minimum height, black background, padding, and centers the text. */
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
     padding: 50px;
@@ -67,12 +66,12 @@ body, html {
     text-align: center;
 }
 
-.icon {
+.icon { /* Styles icons with a large font size and purple color. */
     font-size: 50px;
     color: #6d088b;
 }
 
-.icons {
+.icons { /*  Centers icons horizontally and vertically with a gap between them and a bottom margin. */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,14 +86,14 @@ body, html {
     padding: 50px;
 }
 
-.p2 {
+.p2 { /* Styles paragraph with class p2 with a specific cursive font, size, and blue color. */
     font-family: "Architects Daughter", cursive;
     font-style: normal;
     font-size: 18px;
     color:blue
   }
 
-.image-container {
+.image-container { /* Arranges images horizontally with spacing and adjusts margins. */
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px; /* Adjust spacing between image pairs */
@@ -111,14 +110,14 @@ img {
     height: 300px; 
 }
 
-.p3{
+.p3{ /* Styles paragraph with class p3 with a specific font, weight, style, and blue color. */
     font-family: "Architects Daughter", cursive;
     font-weight: 400;
     font-style: normal;
     color: blue;
 }    
 
-footer {
+footer { /* Styles the footer with a specific height, black background, centered content, and blue text color. */
     height: 90px;
     background-color: black;
     flex-direction: column;
@@ -129,7 +128,7 @@ footer {
 }
 
 /* Styles for modal */
-.modal {
+.modal { /* Styles the modal to be hidden by default, positions it fixed over the screen, and gives it a dark background with transparency. */
     display: none;
     position: fixed;
     z-index: 1000;
@@ -141,7 +140,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.modal-content {
+.modal-content { /* Centers modal content, sets relative positioning, and limits its width. */ 
     position: relative;
     margin: auto;
     padding: 0;
@@ -150,13 +149,13 @@ footer {
     text-align: center;
 }
 
-.modal-image {
+.modal-image { /* Ensures the modal image takes the full width and maintains aspect ratio with a top margin. */
     width: 100%;
     height: auto;
     margin-top: 20px;
 }
 
-.close {
+.close { /* Positions the close button, styles it with a large font, white color, and adds a hover transition. */
     position: absolute;
     top: 20px;
     right: 35px;
@@ -168,13 +167,13 @@ footer {
 }
 
 .close:hover,
-.close:focus {
+.close:focus { /* Changes the close button color on hover or focus.*/
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
 
-.prev, .next {
+.prev, .next { /* Styles the previous and next buttons for navigation within the modal. */
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -189,15 +188,15 @@ footer {
 }
 
 .prev {
-    left: 0;
+    left: 0; /* Positions the previous button to the left. */
 }
 
 .next {
-    right: 0;
+    right: 0; /* Positions the next button to the right. */
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8); /* Adds a background color on hover for the navigation buttons. */
 }
 
 /* Add this CSS to create hover effect */

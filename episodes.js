@@ -13,3 +13,16 @@ function openTab(evt, tabName) { /* Defines a function named openTab that takes 
 }
 
 document.getElementById("defaultOpen").click(); /* Simulates a click on the element with the ID "defaultOpen". */
+
+// Enhance keyboard navigation
+document.querySelectorAll('.tablink').forEach(button => {
+    button.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+            const nextTab = e.key === 'ArrowRight' ? button.nextElementSibling : button.previousElementSibling;
+            if (nextTab) {
+                nextTab.click();
+                nextTab.focus();
+            }
+        }
+    });
+});

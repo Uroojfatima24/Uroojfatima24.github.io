@@ -37,6 +37,7 @@
             <source src="audio1.mp3" type="audio/mpeg"> <!-- Specifies the audio file source and type. -->
             Your browser does not support the audio element. <!-- Fallback text for browsers that do not support the audio element. -->
         </audio>
+        <p>This track is played during the main menu of the game, setting the tone for the entire experience.</p>
     </div>
     <div class="grid-item">
         <h2>Fabletown</h2>
@@ -44,6 +45,7 @@
             <source src="audio2.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <p>Fabletown theme, capturing the mysterious and dark atmosphere of the town.</p>
     </div>
     <div class="grid-item">
         <h2>VS Woodsman</h2>
@@ -51,6 +53,7 @@
             <source src="audio3.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <p>Intense battle music for the confrontation with the Woodsman.</p>
     </div>
     <!-- Middle 3 soundtracks -->
     <div class="grid-item">
@@ -59,6 +62,7 @@
             <source src="audio4.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <p>Emotional track reflecting the tragic story of Faith.</p>
     </div>
     <div class="grid-item">
         <h2>Opening Credits</h2>
@@ -66,6 +70,7 @@
             <source src="audio5.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <p>The opening credits theme, introducing the game's noir atmosphere.</p>
     </div>
     <div class="grid-item">
         <h2>Outside Luxury Apartments</h2>
@@ -73,6 +78,7 @@
             <source src="audio6.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <p>Background music for the scenes outside the luxury apartments.</p>
     </div>
     <!-- Last 3 soundtracks -->
     <div class="grid-item">
@@ -81,6 +87,7 @@
             <source src="audio7.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <p>A calm and soothing track used during quieter moments in the game.</p>
     </div>
     <div class="grid-item">
         <h2>Escape</h2>
@@ -88,6 +95,7 @@
             <source src="audio8.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <p>High-paced music for intense escape scenes.</p>
     </div>
     <div class="grid-item">
         <h2>Feeling</h2>
@@ -95,14 +103,64 @@
             <source src="audio9.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <p>Reflective track, evoking deep emotions and thoughts.</p>
     </div>
 </div>
+
+<section id="comments">
+    <h2>Comments</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="comment-section">
+        <p><strong>John Doe:</strong> I love the Main Menu soundtrack! It sets the perfect mood.</p>
+        <!-- More comments can be dynamically added here -->
+    </div>
+</section>
+
+<!-- Add video embeds -->
+<section id="videos">
+    <h2>Related Videos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EvRdMlc-XXQ?si=1JcxlEOgVFjqXf3j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IK2r6yh0zDg?si=Jsdf9L1wx7MihUDf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
 
 <footer>
     <p class="p3">telltale</p> <!-- Displays the company name in a specific style. -->
     <p>&copy; 2023 LCG Entertainment, Inc. All Rights Reserved.</p>
     <p><a href="https://www.telltale.com/privacy-policy/">Privacy Policy</a> | <a href="https://www.telltale.com/tos/">Terms of Service</a></p>
 </footer>
+
+<script>
+    // JavaScript code to handle comment submission and display
+
+document.addEventListener('DOMContentLoaded', () => {
+    const commentForm = document.querySelector('#comments form');
+    const commentSection = document.querySelector('#comment-section');
+
+    commentForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.querySelector('#name').value;
+        const comment = document.querySelector('#comment').value;
+
+        if (name && comment) {
+            const commentParagraph = document.createElement('p');
+            commentParagraph.innerHTML = `<strong>${name}:</strong> ${comment}`;
+            commentSection.appendChild(commentParagraph);
+
+            // Clear form fields
+            document.querySelector('#name').value = '';
+            document.querySelector('#comment').value = '';
+        }
+    });
+});
+
+</script>
 
 </body>
 </html>

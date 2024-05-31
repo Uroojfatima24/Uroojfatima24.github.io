@@ -88,3 +88,35 @@ footer {
     font-family: "Architects Daughter", cursive; /* Sets the font family for the paragraph. */
     color: blue; /* Sets the text color to blue. */
 } 
+
+/* Responsive design. To Ensure the layout adjusts well on different screen sizes.*/
+@media (max-width: 768px) {
+    .tabs {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid;
+    }
+    .tab-content {
+        padding-left: 0;
+    }
+    .tabs button {
+        text-align: center;
+        border-bottom: 1px solid;
+    }
+}
+
+.tablink.active {
+    background-color: #6d088b; /* Highlight the active tab */
+    color: #fff;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeEffect 0.5s; /* Apply fade effect when switching tabs */
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

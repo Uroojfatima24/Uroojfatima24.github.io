@@ -27,40 +27,41 @@
 <div class="content"> <!-- A div element that wraps the main content. -->
     <div class="tabs"> <!-- A div for tab buttons. -->
 <!-- Buttons to switch between different episode tabs, calling the openTab function and setting background color. -->
-        <button class="tablink" onclick="openTab(event, 'Episode1')" id="defaultOpen" style="background-color: #2f003d">Episode 1</button>
-        <button class="tablink" onclick="openTab(event, 'Episode2')" style="background-color:#2f003d">Episode 2</button>
-        <button class="tablink" onclick="openTab(event, 'Episode3')" style="background-color: #2f003d">Episode 3</button>
-        <button class="tablink" onclick="openTab(event, 'Episode4')" style="background-color: #2f003d">Episode 4</button>
-        <button class="tablink" onclick="openTab(event, 'Episode5')" style="background-color: #2f003d">Episode 5</button>
+<!-- Added aria-controls to tab buttons for better accessibility. Added role="tabpanel" and aria-labelledby to tab content divs.-->
+        <button class="tablink" onclick="openTab(event, 'Episode1')" id="defaultOpen" style="background-color: #2f003d" aria-controls="Episode1">Episode 1</button>
+        <button class="tablink" onclick="openTab(event, 'Episode2')" style="background-color: #2f003d" aria-controls="Episode2">Episode 2</button>
+        <button class="tablink" onclick="openTab(event, 'Episode3')" style="background-color: #2f003d" aria-controls="Episode3">Episode 3</button>
+        <button class="tablink" onclick="openTab(event, 'Episode4')" style="background-color: #2f003d" aria-controls="Episode4">Episode 4</button>
+        <button class="tablink" onclick="openTab(event, 'Episode5')" style="background-color: #2f003d" aria-controls="Episode5">Episode 5</button>
     </div>
 
 <!-- Div elements for each episode content, initially hidden except for the first tab. -->
-    <div class="tab-content" id="Episode1">
+    <div class="tab-content" id="Episode1" role="tabpanel" aria-labelledby="defaultOpen">
         <h2>Episode 1: Faith</h2> <!-- Header for the episode title. -->
         <img src="Ep1.webp" alt="Episode 1 Thumbnail"> <!-- Image representing the episode thumbnail. -->
 <!--Paragraph describing the episode. -->
         <p>A gripping introduction to the world of Fabletown, where Bigby Wolf investigates a murder.</p>
     </div>
 
-    <div class="tab-content" id="Episode2" style="display:none"> 
+    <div class="tab-content" id="Episode2" style="display:none" role="tabpanel" aria-labelledby="Episode2"> 
         <h2>Episode 2: Smoke and Mirrors</h2>
         <img src="Ep2.webp" alt="Episode 2 Thumbnail">
         <p>Bigby delves deeper into the seedy underbelly of Fabletown as tensions rise.</p>
     </div>
 
-    <div class="tab-content" id="Episode3" style="display:none">
+    <div class="tab-content" id="Episode3" style="display:none" role="tabpanel" aria-labelledby="Episode3">
         <h2>Episode 3: A Crooked Mile</h2>
         <img src="Ep3.webp" alt="Episode 3 Thumbnail">
         <p>The investigation takes a dangerous turn as Bigby faces off against powerful adversaries.</p>
     </div>
 
-    <div class="tab-content" id="Episode4" style="display:none">
+    <div class="tab-content" id="Episode4" style="display:none" role="tabpanel" aria-labelledby="Episode4">
         <h2>Episode 4: In Sheep's Clothing</h2>
         <img src="Ep4.webp" alt="Episode 4 Thumbnail">
         <p>Bigby's search for the truth intensifies, leading to shocking revelations and unexpected allies.</p>
     </div>
 
-    <div class="tab-content" id="Episode5" style="display:none">
+    <div class="tab-content" id="Episode5" style="display:none" role="tabpanel" aria-labelledby="Episode5">
         <h2>Episode 5: Cry Wolf</h2>
         <img src="Ep5.webp" alt="Episode 5 Thumbnail">
         <p>The thrilling conclusion as Bigby confronts the ultimate adversary and the fate of Fabletown hangs in the balance.</p>
@@ -74,8 +75,6 @@
     <!-- Paragraph with hyperlinks to Privacy Policy and Terms of Service. -->
     <p><a href="https://www.telltale.com/privacy-policy/">Privacy Policy</a> | <a href="https://www.telltale.com/tos/">Terms of Service</a></p>
 </footer>
-
-<!-- Links to an external JavaScript file named episodes.js. -->
 <script src="episodes.js"></script>
 
 </body>

@@ -47,6 +47,7 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     padding-top: 0px;
+    color: #fff;
 }
 
 .grid-container { /* Styles a grid layout container with three columns, grid gap, and padding. */
@@ -70,6 +71,66 @@ h2 {
 
 audio {
     width: 90%; /*  Styles audio elements to be 90% of their container's width. */
+}
+
+#comments {
+    max-width: 800px; /* Sets the maximum width of the comments section to 800 pixels. */
+    margin: 40px auto; /* Centers the comments section horizontally and adds a 40-pixel margin above and below. */
+    padding: 20px; /* Adds 20 pixels of padding inside the comments section. */
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #7f4368; /* Adds a pinkish shadow around the comments section. */
+}
+
+#comments form {
+    margin-bottom: 20px; /* Adds a 20-pixel margin below the form inside the comments section. */
+}
+
+#comments input[type="text"],
+#comments textarea {
+    width: 100%; /* Makes the text input and textarea fields take up the full width of their container. */
+    padding: 10px 0px; /* Adds 10 pixels of padding on the top and bottom, and 0 pixels on the left and right. */
+    margin: 5px 0; /* Adds a 5-pixel margin on the top and bottom, and 0 pixels on the left and right. */
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#comments input[type="submit"] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#comment-section {
+    margin-top: 20px;
+}
+
+#comment-section p {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: black;
+}
+
+#videos {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #7f4368;
+    text-align: center;
+}
+
+#videos iframe {
+    margin: 10px 0;
+    width: 300px;
+    max-width: 300px;
+    height: 200px;
 }
 
 footer { /* Styles the footer section with a black background, blue text color, and centered content. */

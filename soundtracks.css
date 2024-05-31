@@ -91,7 +91,7 @@ audio {
     width: 100%; /* Makes the text input and textarea fields take up the full width of their container. */
     padding: 10px 0px; /* Adds 10 pixels of padding on the top and bottom, and 0 pixels on the left and right. */
     margin: 5px 0; /* Adds a 5-pixel margin on the top and bottom, and 0 pixels on the left and right. */
-    border: 1px solid;
+    border: 1px solid; /* Sets the border to 1 pixel solid. */
     border-radius: 5px;
 }
 
@@ -105,7 +105,7 @@ audio {
 }
 
 #comment-section {
-    margin-top: 20px;
+    margin-top: 20px; /* Adds a 20-pixel margin on top of the comment section. */
 }
 
 #comment-section p {
@@ -127,9 +127,9 @@ audio {
 }
 
 #videos iframe {
-    margin: 10px 0;
+    margin: 10px 0; /* Adds a 10-pixel margin on the top and bottom, and 0 pixels on the left and right of iframes. */
     width: 300px;
-    max-width: 300px;
+    max-width: 300px; /*  Ensures iframes do not exceed 300 pixels in width. */
     height: 200px;
 }
 

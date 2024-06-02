@@ -96,27 +96,4 @@ footer {
     color: blue; /* Sets the text color to blue. */
 }   
 
-/* Modal styles */
-.modal { /* Styles for the modal container, initially hidden, fixed position, full width and height. */
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 60px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-}
-
-.modal-content { /* Styles the content inside the modal, centered with padding, border, and rounded corners. */
-    background-color: #333;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
-    text-align: center;
-}
 
